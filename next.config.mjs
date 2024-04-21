@@ -1,8 +1,9 @@
-/** @type {import('next').NextConfig} */
-import { withPWA } from 'next-pwa';
+// Importe a biblioteca next-pwa usando a exportação padrão
+import withPWA from 'next-pwa';
 
-module.exports = withPWA({
+export default withPWA({
   pwa: {
     dest: 'public'
   },
+  // next.js config
 });
