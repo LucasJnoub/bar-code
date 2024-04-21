@@ -1,11 +1,21 @@
-/** @type {import('next').NextConfig} */
-// Importe a biblioteca next-pwa usando a exportação padrão
 import withPWA from 'next-pwa';
-
-export default withPWA({
-  pwa: {
-    dest: 'public'
-  },
-  // next.js config
-});
-
+// const isProduction = process.env.NODE_ENV === 'production';
+ 
+const config = {
+  cacheOnFrontEndNav: true,
+  reloadOnOnline:true,
+  swcMinify: true,
+  // disable:false,
+  workboxOptions:{
+    disableDevLogs:true
+  }
+};
+ 
+const nextConfig = withPWA({
+  dest: 'public',
+  // disable: !isProduction,
+})(
+  config
+);
+ 
+export default nextConfig;
