@@ -1,21 +1,22 @@
-import withPWA from 'next-pwa';
-// const isProduction = process.env.NODE_ENV === 'production';
- 
-const config = {
+/**
+ * @type {import('next').NextConfig}
+ */
+import withPWAInit from "@ducanh2912/next-pwa";
+
+const withPWA = withPWAInit({
+  dest: "public",
   cacheOnFrontEndNav: true,
-  reloadOnOnline:true,
-  swcMinify: true,
-  // disable:false,
+  disable:false,
+  skipWaiting: true,
+  aggressiveFrontEndNavCaching: true,
+  swcMinify:true,
   workboxOptions:{
-    disableDevLogs:true
+    disableDevLogs: true,
   }
-};
- 
-const nextConfig = withPWA({
-  dest: 'public',
-  // disable: !isProduction,
-})(
-  config
-);
- 
-export default nextConfig;
+
+});
+
+export default withPWA({
+  // Your Next.js config
+
+});
