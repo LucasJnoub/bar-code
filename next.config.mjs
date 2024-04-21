@@ -1,3 +1,4 @@
+/** @type {import('next').NextConfig} */
 // Importe a biblioteca next-pwa usando a exportação padrão
 import withPWA from 'next-pwa';
 
@@ -7,3 +8,4 @@ export default withPWA({
   },
   // next.js config
 });
+
