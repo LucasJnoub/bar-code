@@ -1,0 +1,42 @@
+{
+  "name": "Bar Code",
+  "short_name": "Bar Code",
+  "icons": [
+     {
+    "src": "/vercel.svg",
+    "sizes": "48x48",
+    "type": "image/png",
+    "purpose":"any maskable"
+  },
+     {
+    "src": "/vercel.svg",
+    "sizes": "72X72",
+    "type": "image/png"
+  },
+     {
+    "src": "/vercel.svg",
+    "sizes": "96X96",
+    "type": "image/png"
+  },
+     {
+    "src": "/vercel.svg",
+    "sizes": "144X144",
+    "type": "image/png"
+  },
+     {
+    "src": "/vercel.svg",
+    "sizes": "192X192",
+    "type": "image/png"
+  },
+     {
+    "src": "/vercel.svg",
+    "sizes": "512X512",
+    "type": "image/png"
+  } 
+  ],
+  "theme_color": "#111827",
+  "background_color": "#111827",
+  "start_url": "/dashboard",
+  "display": "standalone",
+  "orientation": "portrait"
+}
